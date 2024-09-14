@@ -1,0 +1,24 @@
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .cart-section {
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .cart-item:hover {
+    transform: scale(1.02);
+    background-color: #f8f8f8;
+  }
+  

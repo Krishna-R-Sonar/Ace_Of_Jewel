@@ -1,0 +1,45 @@
+/* Sidebar.css */
+
+/* Sidebar panel base styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #2d3748;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(-100%);
+    z-index: 1000;
+}
+
+/* 3D hover effect for menu items */
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect with 3D transformation */
+.sidebar ul li a:hover {
+    transform: scale(1.1) rotateY(10deg); /* 3D scaling and slight rotation */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Sidebar slide-in animation */
+.sidebar.translate-x-0 {
+    transform: translateX(0);
+}
+
+.sidebar.-translate-x-full {
+    transform: translateX(-100%);
+}
+
+/* General transition for smooth opening */
+.sidebar {
+    transition: transform 0.3s ease-in-out;
+}

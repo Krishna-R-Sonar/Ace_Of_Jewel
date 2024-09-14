@@ -1,0 +1,32 @@
+.order-history-container {
+    padding: 20px;
+  }
+  
+  .order-history-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .order-history-list {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .order-history-item {
+    padding: 15px;
+    background: #f8f8f8;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .order-history-item.active {
+    background: #e0e0e0;
+  }
+  
+  .order-history-item-text {
+    margin: 5px 0;
+  }
+  
